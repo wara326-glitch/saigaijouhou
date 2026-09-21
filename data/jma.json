@@ -1,0 +1,5 @@
+{
+  "updated": null,
+  "weather": {"level": 0, "label": "取得準備中", "items": [], "headline": "", "published": null, "source": "気象庁防災情報XML"},
+  "earthquake": {"level": 0, "label": "取得準備中", "magnitude": null, "hypocenter": "", "published": null, "source": "気象庁防災情報XML"}
+}
