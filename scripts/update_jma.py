@@ -1,77 +1,60 @@
 from urllib.request import Request, urlopen
-from xml.etree import ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import json
-JST=timezone(timedelta(hours=9)); UA={'User-Agent':'JapanDisasterDashboard/4.0'}
-FEEDS={'extra':'https://www.data.jma.go.jp/developer/xml/feed/extra.xml','eqvol':'https://www.data.jma.go.jp/developer/xml/feed/eqvol.xml'}
-PREFS=['北海道','青森県','岩手県','宮城県','秋田県','山形県','福島県','茨城県','栃木県','群馬県','埼玉県','千葉県','東京都','神奈川県','新潟県','富山県','石川県','福井県','山梨県','長野県','岐阜県','静岡県','愛知県','三重県','滋賀県','京都府','大阪府','兵庫県','奈良県','和歌山県','鳥取県','島根県','岡山県','広島県','山口県','徳島県','香川県','愛媛県','高知県','福岡県','佐賀県','長崎県','熊本県','大分県','宮崎県','鹿児島県','沖縄県']
-REGIONS={'県北':['福島市','二本松市','伊達市','本宮市','桑折町','国見町','川俣町','大玉村'],'県中':['郡山市','須賀川市','田村市','鏡石町','天栄村','石川町','玉川村','平田村','浅川町','古殿町','三春町','小野町'],'県南':['白河市','西郷村','泉崎村','中島村','矢吹町','棚倉町','矢祭町','塙町','鮫川村'],'会津':['会津若松市','喜多方市','北塩原村','西会津町','磐梯町','猪苗代町','会津坂下町','湯川村','柳津町','三島町','金山町','昭和村','会津美里町'],'南会津':['下郷町','檜枝岐村','只見町','南会津町'],'相双':['相馬市','南相馬市','広野町','楢葉町','富岡町','川内村','大熊町','双葉町','浪江町','葛尾村','新地町','飯舘村'],'いわき':['いわき市']}
-def get(url):
- with urlopen(Request(url,headers=UA),timeout=20) as r:return r.read()
-def local(t):return t.split('}')[-1]
-def text_all(root):return ' '.join((e.text or '').strip() for e in root.iter() if (e.text or '').strip())
-def feed_entries(url):
- root=ET.fromstring(get(url));out=[]
- for e in root.iter():
-  if local(e.tag)!='entry':continue
-  d={}
-  for c in e:
-   n=local(c.tag)
-   if n in ('title','updated','id') and c.text:d[n]=c.text.strip()
-   if n=='link' and c.attrib.get('href'):d['link']=c.attrib['href']
-  if d.get('link'):out.append(d)
- return out
-def sev(s):
- if '特別警報' in s:return 4
- if '危険警報' in s:return 3
- if '警報' in s:return 3
- if '注意報' in s:return 1
+JST=timezone(timedelta(hours=9)); UA={'User-Agent':'JapanDisasterDashboard/5.0'}
+PREFS={'北海道':'01','青森県':'02','岩手県':'03','宮城県':'04','秋田県':'05','山形県':'06','福島県':'07','茨城県':'08','栃木県':'09','群馬県':'10','埼玉県':'11','千葉県':'12','東京都':'13','神奈川県':'14','新潟県':'15','富山県':'16','石川県':'17','福井県':'18','山梨県':'19','長野県':'20','岐阜県':'21','静岡県':'22','愛知県':'23','三重県':'24','滋賀県':'25','京都府':'26','大阪府':'27','兵庫県':'28','奈良県':'29','和歌山県':'30','鳥取県':'31','島根県':'32','岡山県':'33','広島県':'34','山口県':'35','徳島県':'36','香川県':'37','愛媛県':'38','高知県':'39','福岡県':'40','佐賀県':'41','長崎県':'42','熊本県':'43','大分県':'44','宮崎県':'45','鹿児島県':'46','沖縄県':'47'}
+REGIONS={'県北':['07201','07210','07213','07214','07301','07303','07308','07322'],'県中':['07203','07207','07211','07342','07344','07501','07502','07503','07504','07505','07521','07522'],'県南':['07205','07461','07464','07465','07466','07481','07482','07483','07484'],'会津':['07202','07208','07402','07405','07407','07408','07421','07422','07423','07444','07445','07446','07447'],'南会津':['07362','07364','07367','07368'],'相双':['07209','07212','07541','07542','07543','07544','07545','07546','07547','07548','07561','07564'],'いわき':['07204']}
+# JMA warning JSON: current municipality-level warnings. Codes beginning 07 are Fukushima municipalities.
+def get_json(url):
+ with urlopen(Request(url,headers=UA),timeout=20) as r:return json.loads(r.read().decode('utf-8'))
+def sev_name(name):
+ if '特別警報' in name:return 4
+ if '危険警報' in name or ('警報' in name and '注意報' not in name):return 3
+ if '注意報' in name:return 1
  return 0
 def label(lv):return '特別警報' if lv>=4 else '警報' if lv>=3 else '注意報' if lv>=1 else '平常'
-def warning_rows(root):
- rows=[]
- for node in root.iter():
-  if local(node.tag) not in ('Item','Warning'):continue
-  txt=text_all(node)
-  if '解除' in txt:continue
-  names=[];areas=[]
-  for x in node.iter():
-   if not x.text:continue
-   s=x.text.strip();n=local(x.tag)
-   if n in ('Name','Kind') and ('警報' in s or '注意報' in s):names.append(s)
-   if n=='Name':areas.append(s)
-  names=list(dict.fromkeys(names));areas=list(dict.fromkeys(areas))
-  if names:rows.append((names,areas,txt))
- return rows
-def parse_all_warnings():
- result={p:{'level':0,'label':'平常','items':[]} for p in PREFS}; frows=[]; latest=None
- for ent in feed_entries(FEEDS['extra'])[:220]:
-  if not any(k in ent.get('title','') for k in ['警報','注意報']):continue
-  try:root=ET.fromstring(get(ent['link']))
-  except:continue
-  whole=text_all(root); matched=[p for p in PREFS if p in whole]
-  if not matched:continue
-  rows=warning_rows(root)
-  for p in matched:
-   hits=[]
-   for names,areas,txt in rows:
-    if p in txt or any(p in a for a in areas):hits+=names
-   if not hits:
-    for names,areas,txt in rows:hits+=names
-   hits=list(dict.fromkeys(hits));lv=max([sev(x) for x in hits] or [0])
-   if lv>=result[p]['level']:result[p]={'level':lv,'label':label(lv),'items':hits[:10],'published':ent.get('updated')}
-   if p=='福島県' and not frows:frows=rows;latest=ent
- # Fukushima municipalities may not repeat prefecture name in each Item; derive seven areas from latest Fukushima bulletin.
- regions={}
- for rn,cities in REGIONS.items():
-  hits=[]
-  for names,areas,txt in frows:
-   if any(c in txt or c in areas for c in cities):hits+=names
-  hits=list(dict.fromkeys(hits));lv=max([sev(x) for x in hits] or [0]);regions[rn]={'level':lv,'label':label(lv),'items':hits[:8]}
- return result,regions
+def active_kinds(area):
+ out=[]
+ for w in area.get('warnings',[]):
+  status=str(w.get('status',''))
+  if status in ('解除','発表警報・注意報はなし','解除済み'):continue
+  name=w.get('name') or w.get('kind') or ''
+  if name and ('警報' in name or '注意報' in name):out.append(name)
+ return list(dict.fromkeys(out))
+def parse_pref(pref,code):
+ try:data=get_json(f'https://www.jma.go.jp/bosai/warning/data/warning/{code}0000.json')
+ except:return {'level':0,'label':'取得確認','items':[]},{}
+ # Latest JMA structure has areaTypes; select municipality/local-government layer when available.
+ areas=[]
+ for at in data.get('areaTypes',[]):
+  candidate=at.get('areas',[])
+  if candidate and any(str(a.get('code','')).startswith(code) and len(str(a.get('code','')))==5 for a in candidate):areas=candidate
+ if not areas:
+  for at in data.get('areaTypes',[]):areas.extend(at.get('areas',[]))
+ municipal={}
+ for a in areas:
+  c=str(a.get('code','')); kinds=active_kinds(a)
+  if c and kinds:municipal[c]={'name':a.get('name',''),'items':kinds,'level':max([sev_name(x) for x in kinds] or [0])}
+ items=[]
+ for x in municipal.values():items+=x['items']
+ items=list(dict.fromkeys(items));lv=max([x['level'] for x in municipal.values()] or [0])
+ return {'level':lv,'label':label(lv),'items':items[:12]},municipal
 def main():
- prefs,regions=parse_all_warnings();now=datetime.now(JST).isoformat(timespec='seconds')
- out={'updated':now,'prefectures':prefs,'regions':regions}
+ prefs={};fmun={}
+ for p,c in PREFS.items():
+  prefs[p],mun=parse_pref(p,c)
+  if p=='福島県':fmun=mun
+ regions={}
+ for rn,codes in REGIONS.items():
+  hits=[];affected=[];lv=0
+  for c in codes:
+   d=fmun.get(c)
+   if not d:continue
+   lv=max(lv,d['level']);hits+=d['items'];affected.append(d['name'])
+  hits=list(dict.fromkeys(hits));affected=list(dict.fromkeys(affected))
+  regions[rn]={'level':lv,'label':label(lv),'items':hits[:8],'affected':affected}
+ now=datetime.now(JST).isoformat(timespec='seconds')
+ out={'updated':now,'prefectures':prefs,'regions':regions,'source':'JMA warning JSON municipality data'}
  Path('data').mkdir(exist_ok=True);Path('data/jma.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
 if __name__=='__main__':main()
