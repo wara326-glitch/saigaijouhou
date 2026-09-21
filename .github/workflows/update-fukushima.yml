@@ -1,0 +1,38 @@
+name: Update Fukushima current JMA status
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-fukushima-jma
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Update Fukushima from JMA VPWS50
+        run: python scripts/update_fukushima.py
+      - name: Commit current data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/jma.json
+          if git diff --cached --quiet; then
+            echo 'No data change'
+            exit 0
+          fi
+          git commit -m 'Update Fukushima JMA current status'
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
