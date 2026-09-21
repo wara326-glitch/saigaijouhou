@@ -1,5 +1,59 @@
 {
-  "updated": null,
-  "weather": {"level": 0, "label": "取得準備中", "items": [], "headline": "", "published": null, "source": "気象庁防災情報XML"},
-  "earthquake": {"level": 0, "label": "取得準備中", "magnitude": null, "hypocenter": "", "published": null, "source": "気象庁防災情報XML"}
+  "updated": "2026-09-21T13:53:16+09:00",
+  "weather": {
+    "level": 1,
+    "label": "注意報",
+    "items": [
+      "大雨注意報",
+      "雷注意報",
+      "強風注意報",
+      "波浪注意報",
+      "濃霧注意報"
+    ],
+    "published": "2026-09-21T04:04:06Z"
+  },
+  "earthquake": {
+    "level": 0,
+    "label": "直近の対象情報なし"
+  },
+  "tsunami": {
+    "level": 0,
+    "label": "発表なし",
+    "detail": "現在、福島県対象の情報は確認されていません"
+  },
+  "landslide": {
+    "level": 3,
+    "label": "大雨警報",
+    "detail": "大雨警報",
+    "published": "2026-09-21T04:04:00Z"
+  },
+  "flood": {
+    "level": 0,
+    "label": "発表なし",
+    "detail": "現在、福島県対象の情報は確認されていません"
+  },
+  "evacuation": {
+    "level": 0,
+    "label": "県ポータル連携",
+    "detail": "避難指示・開設避難所は福島県防災ポータルで確認",
+    "url": "https://www.bousai.pref.fukushima.lg.jp/"
+  },
+  "road": {
+    "level": 0,
+    "label": "公式情報",
+    "detail": "県道・国道・高速道路の通行規制",
+    "url": "https://www.pref.fukushima.lg.jp/sec/41035c/dourokisei.html"
+  },
+  "power": {
+    "level": 0,
+    "label": "停電情報",
+    "detail": "東北電力ネットワークの福島県停電情報",
+    "url": "https://nw.tohoku-epco.co.jp/teideninfo/"
+  },
+  "nuclear": {
+    "level": 0,
+    "label": "リアルタイム監視",
+    "detail": "県内モニタリングポスト・空間線量率",
+    "url": "https://fukushima-radioactivity.jp/pc/monitoringPostList"
+  }
 }
