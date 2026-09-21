@@ -1,64 +1,818 @@
 {
-  "updated": "2026-09-21T15:49:25+09:00",
-  "weather": {
-    "level": 3,
-    "label": "警報",
-    "items": [
-      "暴風警報",
-      "波浪警報",
-      "大雨注意報",
-      "雷注意報",
-      "濃霧注意報",
-      "強風注意報",
-      "波浪注意報",
-      "警報級",
-      "注意報級",
-      "注意報級未満"
-    ],
-    "published": "2026-09-21T06:16:18Z"
+  "updated": "2026-09-21T16:02:25+09:00",
+  "prefectures": {
+    "北海道": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "青森県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "岩手県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "宮城県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "秋田県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "山形県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "福島県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "茨城県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "栃木県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "群馬県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "埼玉県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "千葉県": {
+      "level": 2,
+      "label": "警戒",
+      "dominant": "土砂",
+      "detail": "土砂災害警戒情報",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "土砂": {
+          "level": 2,
+          "detail": "土砂災害警戒情報"
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "東京都": {
+      "level": 2,
+      "label": "警戒",
+      "dominant": "土砂",
+      "detail": "土砂災害警戒情報",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "土砂": {
+          "level": 2,
+          "detail": "土砂災害警戒情報"
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "神奈川県": {
+      "level": 2,
+      "label": "警戒",
+      "dominant": "土砂",
+      "detail": "土砂災害警戒情報",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "土砂": {
+          "level": 2,
+          "detail": "土砂災害警戒情報"
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "新潟県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "富山県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "石川県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "福井県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "山梨県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "長野県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "岐阜県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "静岡県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "愛知県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "三重県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "滋賀県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "京都府": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "大阪府": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "兵庫県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "奈良県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "和歌山県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "鳥取県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "島根県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "岡山県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "広島県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "山口県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "徳島県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "香川県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "愛媛県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "高知県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "福岡県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "佐賀県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "長崎県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "熊本県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "大分県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "宮崎県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "鹿児島県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    },
+    "沖縄県": {
+      "level": 0,
+      "label": "平常",
+      "dominant": "平常",
+      "detail": "",
+      "hazards": {
+        "気象": {
+          "level": 0,
+          "items": []
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
+        }
+      }
+    }
   },
-  "earthquake": {
-    "level": 0,
-    "label": "直近の対象情報なし"
+  "regions": {
+    "県北": {
+      "level": 0,
+      "label": "平常",
+      "items": [],
+      "affected": []
+    },
+    "県中": {
+      "level": 0,
+      "label": "平常",
+      "items": [],
+      "affected": []
+    },
+    "県南": {
+      "level": 0,
+      "label": "平常",
+      "items": [],
+      "affected": []
+    },
+    "会津": {
+      "level": 0,
+      "label": "平常",
+      "items": [],
+      "affected": []
+    },
+    "南会津": {
+      "level": 0,
+      "label": "平常",
+      "items": [],
+      "affected": []
+    },
+    "相双": {
+      "level": 0,
+      "label": "平常",
+      "items": [],
+      "affected": []
+    },
+    "いわき": {
+      "level": 0,
+      "label": "平常",
+      "items": [],
+      "affected": []
+    }
   },
-  "tsunami": {
-    "level": 0,
-    "label": "発表なし",
-    "detail": "現在、福島県対象の情報は確認されていません"
-  },
-  "landslide": {
-    "level": 3,
-    "label": "大雨警報",
-    "detail": "大雨警報",
-    "published": "2026-09-21T04:04:00Z"
-  },
-  "flood": {
-    "level": 0,
-    "label": "発表なし",
-    "detail": "現在、福島県対象の情報は確認されていません"
-  },
-  "evacuation": {
-    "level": 0,
-    "label": "県ポータル連携",
-    "detail": "避難指示・開設避難所は福島県防災ポータルで確認",
-    "url": "https://www.bousai.pref.fukushima.lg.jp/"
-  },
-  "road": {
-    "level": 0,
-    "label": "公式情報",
-    "detail": "県道・国道・高速道路の通行規制",
-    "url": "https://www.pref.fukushima.lg.jp/sec/41035c/dourokisei.html"
-  },
-  "power": {
-    "level": 0,
-    "label": "停電情報",
-    "detail": "東北電力ネットワークの福島県停電情報",
-    "url": "https://nw.tohoku-epco.co.jp/teideninfo/"
-  },
-  "nuclear": {
-    "level": 0,
-    "label": "リアルタイム監視",
-    "detail": "県内モニタリングポスト・空間線量率",
-    "url": "https://fukushima-radioactivity.jp/pc/monitoringPostList"
-  }
+  "sources": [
+    "JMA warning JSON",
+    "JMA disaster XML"
+  ],
+  "note": "Prefecture tab color is maximum severity among weather, earthquake, tsunami, landslide and river. Evacuation is shown as unconnected until a reliable machine-readable feed is configured."
 }
