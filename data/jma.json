@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T16:22:10+09:00",
+  "updated": "2026-09-21T16:38:05+09:00",
   "prefectures": {
     "北海道": {
       "level": 0,
@@ -122,15 +122,25 @@
       }
     },
     "茨城県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 3,
+      "label": "危険",
+      "dominant": "土砂",
+      "detail": "土砂災害危険警報",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "municipality_count": 0
+        },
+        "土砂": {
+          "level": 3,
+          "detail": "土砂災害危険警報",
+          "published": "2026-09-21T07:25:00Z"
+        },
+        "大雨": {
+          "level": 2,
+          "detail": "大雨警報",
+          "published": "2026-09-21T04:54:40Z"
         },
         "避難情報": {
           "level": null,
@@ -191,7 +201,7 @@
     },
     "千葉県": {
       "level": 3,
-      "label": "警報",
+      "label": "危険",
       "dominant": "土砂",
       "detail": "土砂災害危険警報",
       "hazards": {
@@ -203,7 +213,12 @@
         "土砂": {
           "level": 3,
           "detail": "土砂災害危険警報",
-          "published": "2026-09-21T05:25:03Z"
+          "published": "2026-09-21T04:58:06Z"
+        },
+        "大雨": {
+          "level": 3,
+          "detail": "大雨危険警報",
+          "published": "2026-09-21T05:24:49Z"
         },
         "避難情報": {
           "level": null,
@@ -213,7 +228,7 @@
     },
     "東京都": {
       "level": 3,
-      "label": "警報",
+      "label": "危険",
       "dominant": "土砂",
       "detail": "土砂災害危険警報",
       "hazards": {
@@ -225,7 +240,12 @@
         "土砂": {
           "level": 3,
           "detail": "土砂災害危険警報",
-          "published": "2026-09-21T05:24:39Z"
+          "published": "2026-09-21T04:53:30Z"
+        },
+        "大雨": {
+          "level": 2,
+          "detail": "大雨警報",
+          "published": "2026-09-21T05:24:28Z"
         },
         "避難情報": {
           "level": null,
@@ -234,15 +254,25 @@
       }
     },
     "神奈川県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 3,
+      "label": "危険",
+      "dominant": "大雨",
+      "detail": "大雨危険警報",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "municipality_count": 0
+        },
+        "大雨": {
+          "level": 3,
+          "detail": "大雨危険警報",
+          "published": "2026-09-21T05:10:46Z"
+        },
+        "土砂": {
+          "level": 3,
+          "detail": "土砂災害危険警報",
+          "published": "2026-09-21T05:15:27Z"
         },
         "避難情報": {
           "level": null,
@@ -370,15 +400,20 @@
       }
     },
     "静岡県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 2,
+      "label": "警戒",
+      "dominant": "大雨",
+      "detail": "大雨警報",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "municipality_count": 0
+        },
+        "大雨": {
+          "level": 2,
+          "detail": "大雨警報",
+          "published": "2026-09-21T05:47:08Z"
         },
         "避難情報": {
           "level": null,
@@ -860,8 +895,8 @@
   },
   "municipalities": {},
   "sources": [
-    "JMA current warning JSON for all 47 prefectures",
+    "JMA current warning JSON",
     "JMA disaster XML feeds"
   ],
-  "note": "All 47 prefectures aggregate every currently active JMA warning/advisory found at municipality level. No-data fetch failures are marked as unavailable rather than normal."
+  "note": "2026 level-based JMA hazards supported: heavy rain, landslide, river flooding, storm surge, plus tsunami, earthquake and all active municipal warnings/advisories."
 }
