@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T04:34:54+09:00",
+  "updated": "2026-09-22T04:46:01+09:00",
   "prefectures": {
     "北海道": {
       "level": 0,
@@ -531,20 +531,15 @@
       }
     },
     "島根県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "地震",
-      "detail": "震度3",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "municipality_count": 0
-        },
-        "地震": {
-          "level": 1,
-          "detail": "震度3",
-          "published": "2026-09-21T13:42:32Z"
         },
         "避難情報": {
           "level": null,
@@ -570,20 +565,15 @@
       }
     },
     "広島県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "地震",
-      "detail": "震度3",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "municipality_count": 0
-        },
-        "地震": {
-          "level": 1,
-          "detail": "震度3",
-          "published": "2026-09-21T13:42:32Z"
         },
         "避難情報": {
           "level": null,
@@ -592,20 +582,15 @@
       }
     },
     "山口県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "地震",
-      "detail": "震度3",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "municipality_count": 0
-        },
-        "地震": {
-          "level": 1,
-          "detail": "震度3",
-          "published": "2026-09-21T13:42:32Z"
         },
         "避難情報": {
           "level": null,
@@ -648,20 +633,15 @@
       }
     },
     "愛媛県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "地震",
-      "detail": "震度3",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "municipality_count": 0
-        },
-        "地震": {
-          "level": 1,
-          "detail": "震度3",
-          "published": "2026-09-21T13:42:32Z"
         },
         "避難情報": {
           "level": null,
@@ -670,20 +650,15 @@
       }
     },
     "高知県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "地震",
-      "detail": "震度3",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "municipality_count": 0
-        },
-        "地震": {
-          "level": 1,
-          "detail": "震度3",
-          "published": "2026-09-21T13:42:32Z"
         },
         "避難情報": {
           "level": null,
@@ -692,20 +667,15 @@
       }
     },
     "福岡県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "地震",
-      "detail": "震度3",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "municipality_count": 0
-        },
-        "地震": {
-          "level": 1,
-          "detail": "震度3",
-          "published": "2026-09-21T13:42:32Z"
         },
         "避難情報": {
           "level": null,
@@ -714,20 +684,15 @@
       }
     },
     "佐賀県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "地震",
-      "detail": "震度3",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "municipality_count": 0
-        },
-        "地震": {
-          "level": 1,
-          "detail": "震度3",
-          "published": "2026-09-21T13:42:32Z"
         },
         "避難情報": {
           "level": null,
@@ -736,20 +701,15 @@
       }
     },
     "長崎県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "地震",
-      "detail": "震度3",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "municipality_count": 0
-        },
-        "地震": {
-          "level": 1,
-          "detail": "震度3",
-          "published": "2026-09-21T13:42:32Z"
         },
         "避難情報": {
           "level": null,
@@ -771,7 +731,7 @@
         "地震": {
           "level": 1,
           "detail": "震度3",
-          "published": "2026-09-21T13:42:32Z"
+          "published": "2026-09-21T16:40:55Z"
         },
         "避難情報": {
           "level": null,
@@ -780,20 +740,15 @@
       }
     },
     "大分県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "地震",
-      "detail": "震度3",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "municipality_count": 0
-        },
-        "地震": {
-          "level": 1,
-          "detail": "震度3",
-          "published": "2026-09-21T13:40:08Z"
         },
         "避難情報": {
           "level": null,
@@ -815,7 +770,7 @@
         "地震": {
           "level": 1,
           "detail": "震度3",
-          "published": "2026-09-21T13:40:08Z"
+          "published": "2026-09-21T16:43:10Z"
         },
         "避難情報": {
           "level": null,
@@ -837,7 +792,7 @@
         "地震": {
           "level": 1,
           "detail": "震度3",
-          "published": "2026-09-21T13:42:32Z"
+          "published": "2026-09-21T16:43:10Z"
         },
         "避難情報": {
           "level": null,
