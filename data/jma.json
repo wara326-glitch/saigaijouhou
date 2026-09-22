@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T08:30:15+09:00",
+  "updated": "2026-09-23T08:42:03.899875+09:00",
   "prefectures": {
     "北海道": {
       "level": 0,
@@ -105,28 +105,16 @@
       }
     },
     "福島県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "気象",
-      "detail": "濃霧注意報",
+      "level": 0,
+      "label": "取得不能",
+      "dominant": "取得不能",
+      "detail": "福島県の最新VPWS50集約通報を確認できません: ",
+      "data_error": true,
       "hazards": {
         "気象": {
-          "level": 1,
-          "items": [
-            "濃霧注意報"
-          ],
-          "municipality_count": 59,
-          "source": "JMA R06 VPWW55-61",
-          "products": [
-            {
-              "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
-              "updated": "2026-09-22T17:41:12Z"
-            }
-          ]
-        },
-        "避難情報": {
           "level": null,
-          "detail": "自動取得未接続"
+          "items": [],
+          "error": "福島県の最新VPWS50集約通報を確認できません: "
         }
       }
     },
@@ -815,126 +803,46 @@
   },
   "regions": {
     "県北": {
-      "level": 1,
-      "label": "注意",
-      "items": [
-        "濃霧注意報"
-      ],
-      "affected": [
-        "福島市",
-        "二本松市",
-        "伊達市",
-        "本宮市",
-        "桑折町",
-        "国見町",
-        "川俣町",
-        "大玉村"
-      ]
+      "level": null,
+      "label": "取得不能",
+      "items": [],
+      "affected": []
     },
     "県中": {
-      "level": 1,
-      "label": "注意",
-      "items": [
-        "濃霧注意報"
-      ],
-      "affected": [
-        "郡山市",
-        "須賀川市",
-        "田村市",
-        "鏡石町",
-        "天栄村",
-        "石川町",
-        "玉川村",
-        "平田村",
-        "浅川町",
-        "古殿町",
-        "三春町",
-        "小野町"
-      ]
+      "level": null,
+      "label": "取得不能",
+      "items": [],
+      "affected": []
     },
     "県南": {
-      "level": 1,
-      "label": "注意",
-      "items": [
-        "濃霧注意報"
-      ],
-      "affected": [
-        "白河市",
-        "西郷村",
-        "泉崎村",
-        "中島村",
-        "矢吹町",
-        "棚倉町",
-        "矢祭町",
-        "塙町",
-        "鮫川村"
-      ]
+      "level": null,
+      "label": "取得不能",
+      "items": [],
+      "affected": []
     },
     "会津": {
-      "level": 1,
-      "label": "注意",
-      "items": [
-        "濃霧注意報"
-      ],
-      "affected": [
-        "会津若松市",
-        "喜多方市",
-        "北塩原村",
-        "西会津町",
-        "磐梯町",
-        "猪苗代町",
-        "会津坂下町",
-        "湯川村",
-        "柳津町",
-        "三島町",
-        "金山町",
-        "昭和村",
-        "会津美里町"
-      ]
+      "level": null,
+      "label": "取得不能",
+      "items": [],
+      "affected": []
     },
     "南会津": {
-      "level": 1,
-      "label": "注意",
-      "items": [
-        "濃霧注意報"
-      ],
-      "affected": [
-        "下郷町",
-        "檜枝岐村",
-        "只見町",
-        "南会津町"
-      ]
+      "level": null,
+      "label": "取得不能",
+      "items": [],
+      "affected": []
     },
     "相双": {
-      "level": 1,
-      "label": "注意",
-      "items": [
-        "濃霧注意報"
-      ],
-      "affected": [
-        "相馬市",
-        "南相馬市",
-        "広野町",
-        "楢葉町",
-        "富岡町",
-        "川内村",
-        "大熊町",
-        "双葉町",
-        "浪江町",
-        "葛尾村",
-        "新地町",
-        "飯舘村"
-      ]
+      "level": null,
+      "label": "取得不能",
+      "items": [],
+      "affected": []
     },
     "いわき": {
-      "level": 1,
-      "label": "注意",
-      "items": [
-        "濃霧注意報"
-      ],
-      "affected": [
-        "いわき市"
-      ]
+      "level": null,
+      "label": "取得不能",
+      "items": [],
+      "affected": []
     }
   },
   "municipalities": {
@@ -1665,5 +1573,10 @@
     }
   },
   "warning_source": "JMA warning page / R06 VPWW55-61",
-  "warning_updated": "2026-09-23T08:30:16+09:00"
+  "warning_updated": "2026-09-23T08:30:16+09:00",
+  "fukushima_source": {
+    "status": "error",
+    "error": "福島県の最新VPWS50集約通報を確認できません: "
+  },
+  "fukushima_updated": "2026-09-23T08:42:03.899875+09:00"
 }
