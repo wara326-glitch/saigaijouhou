@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T09:39:43.706545+09:00",
+  "updated": "2026-09-23T09:46:16+09:00",
   "prefectures": {
     "北海道": {
       "level": 0,
@@ -106,15 +106,25 @@
     },
     "福島県": {
       "level": 0,
-      "label": "取得不能",
-      "dominant": "取得不能",
-      "detail": "福島県の最新VPWS50集約通報を確認できません: ",
-      "data_error": true,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "現在、発表中の気象警報・注意報はありません。",
       "hazards": {
         "気象": {
-          "level": null,
+          "level": 0,
           "items": [],
-          "error": "福島県の最新VPWS50集約通報を確認できません: "
+          "municipality_count": 0,
+          "source": "JMA R06 VPWW55-61",
+          "products": [
+            {
+              "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+              "updated": "2026-09-23T00:41:43Z"
+            }
+          ]
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
         }
       }
     },
@@ -803,44 +813,44 @@
   },
   "regions": {
     "県北": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "県中": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "県南": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "会津": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "南会津": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "相双": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "いわき": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     }
@@ -1144,12 +1154,12 @@
   },
   "fukushima_source_products": [
     {
-      "title": "台風の暴風域に入る確率",
-      "updated": "2026-09-22T19:23:05Z"
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-23T00:41:43Z"
     },
     {
-      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
-      "updated": "2026-09-22T17:41:12Z"
+      "title": "台風の暴風域に入る確率",
+      "updated": "2026-09-22T19:23:05Z"
     }
   ],
   "sources": [
@@ -1158,425 +1168,302 @@
   ],
   "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe.",
   "fukushima_municipalities": {
-    "07214": {
-      "name": "本宮市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07548": {
-      "name": "葛尾村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07303": {
-      "name": "国見町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07421": {
-      "name": "会津坂下町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07543": {
-      "name": "富岡町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07322": {
-      "name": "大玉村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07211": {
-      "name": "田村市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07202": {
-      "name": "会津若松市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07408": {
-      "name": "猪苗代町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07547": {
-      "name": "浪江町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07466": {
-      "name": "矢吹町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07542": {
-      "name": "楢葉町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07503": {
-      "name": "平田村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07464": {
-      "name": "泉崎村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07445": {
-      "name": "金山町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07501": {
-      "name": "石川町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07521": {
-      "name": "三春町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07344": {
-      "name": "天栄村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07423": {
-      "name": "柳津町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+    "07301": {
+      "name": "",
+      "items": [],
+      "level": 0
     },
     "07502": {
-      "name": "玉川村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+      "name": "",
+      "items": [],
+      "level": 0
     },
-    "07207": {
-      "name": "須賀川市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+    "07202": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07464": {
+      "name": "",
+      "items": [],
+      "level": 0
     },
     "07407": {
-      "name": "磐梯町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07405": {
-      "name": "西会津町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07564": {
-      "name": "飯舘村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+      "name": "",
+      "items": [],
+      "level": 0
     },
     "07212": {
-      "name": "南相馬市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07484": {
-      "name": "鮫川村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07203": {
-      "name": "郡山市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07482": {
-      "name": "矢祭町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07541": {
-      "name": "広野町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07209": {
-      "name": "相馬市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07367": {
-      "name": "只見町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07210": {
-      "name": "二本松市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07546": {
-      "name": "双葉町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07505": {
-      "name": "古殿町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07342": {
-      "name": "鏡石町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07481": {
-      "name": "棚倉町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07213": {
-      "name": "伊達市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07402": {
-      "name": "北塩原村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+      "name": "",
+      "items": [],
+      "level": 0
     },
     "07201": {
-      "name": "福島市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07368": {
-      "name": "南会津町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07461": {
-      "name": "西郷村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07522": {
-      "name": "小野町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07362": {
-      "name": "下郷町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07308": {
-      "name": "川俣町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07504": {
-      "name": "浅川町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07561": {
-      "name": "新地町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07544": {
-      "name": "川内村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
-    },
-    "07208": {
-      "name": "喜多方市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+      "name": "",
+      "items": [],
+      "level": 0
     },
     "07465": {
-      "name": "中島村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07445": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07402": {
+      "name": "",
+      "items": [],
+      "level": 0
     },
     "07545": {
-      "name": "大熊町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+      "name": "",
+      "items": [],
+      "level": 0
     },
-    "07205": {
-      "name": "白河市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+    "07541": {
+      "name": "",
+      "items": [],
+      "level": 0
     },
-    "07364": {
-      "name": "檜枝岐村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+    "07544": {
+      "name": "",
+      "items": [],
+      "level": 0
     },
-    "07301": {
-      "name": "桑折町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+    "07503": {
+      "name": "",
+      "items": [],
+      "level": 0
     },
-    "07422": {
-      "name": "湯川村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+    "07505": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07423": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07548": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07211": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07214": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07564": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07461": {
+      "name": "",
+      "items": [],
+      "level": 0
     },
     "07447": {
-      "name": "会津美里町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07364": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07481": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07368": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07543": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07203": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07466": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07303": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07322": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07208": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07207": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07422": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07210": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07546": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07542": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07504": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07522": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07308": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07484": {
+      "name": "",
+      "items": [],
+      "level": 0
     },
     "07446": {
-      "name": "昭和村",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+      "name": "",
+      "items": [],
+      "level": 0
     },
-    "07444": {
-      "name": "三島町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+    "07344": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07408": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07342": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07421": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07367": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07209": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07547": {
+      "name": "",
+      "items": [],
+      "level": 0
     },
     "07204": {
-      "name": "いわき市",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07501": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07213": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07205": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07444": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07521": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07482": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07362": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07561": {
+      "name": "",
+      "items": [],
+      "level": 0
     },
     "07483": {
-      "name": "塙町",
-      "items": [
-        "濃霧注意報"
-      ],
-      "level": 1
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07405": {
+      "name": "",
+      "items": [],
+      "level": 0
     }
   },
   "warning_source": "JMA warning page / R06 VPWW55-61",
-  "warning_updated": "2026-09-23T09:27:46+09:00",
-  "fukushima_source": {
-    "status": "error",
-    "error": "福島県の最新VPWS50集約通報を確認できません: "
-  },
-  "fukushima_updated": "2026-09-23T09:39:43.706545+09:00"
+  "warning_updated": "2026-09-23T09:46:17+09:00"
 }
