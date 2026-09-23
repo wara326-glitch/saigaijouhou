@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T11:08:35+09:00",
+  "updated": "2026-09-23T11:20:18.379000+09:00",
   "prefectures": {
     "北海道": {
       "level": 0,
@@ -106,25 +106,15 @@
     },
     "福島県": {
       "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "現在、発表中の気象警報・注意報はありません。",
+      "label": "取得不能",
+      "dominant": "取得不能",
+      "detail": "福島県の最新VPWS50集約通報を確認できません: ",
+      "data_error": true,
       "hazards": {
         "気象": {
-          "level": 0,
-          "items": [],
-          "municipality_count": 0,
-          "source": "JMA R06 VPWW55-61",
-          "products": [
-            {
-              "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
-              "updated": "2026-09-23T00:41:43Z"
-            }
-          ]
-        },
-        "避難情報": {
           "level": null,
-          "detail": "自動取得未接続"
+          "items": [],
+          "error": "福島県の最新VPWS50集約通報を確認できません: "
         }
       }
     },
@@ -813,44 +803,44 @@
   },
   "regions": {
     "県北": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     },
     "県中": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     },
     "県南": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     },
     "会津": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     },
     "南会津": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     },
     "相双": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     },
     "いわき": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     }
@@ -1465,5 +1455,10 @@
     }
   },
   "warning_source": "JMA warning page / R06 VPWW55-61",
-  "warning_updated": "2026-09-23T11:08:36+09:00"
+  "warning_updated": "2026-09-23T11:08:36+09:00",
+  "fukushima_source": {
+    "status": "error",
+    "error": "福島県の最新VPWS50集約通報を確認できません: "
+  },
+  "fukushima_updated": "2026-09-23T11:20:18.379000+09:00"
 }
