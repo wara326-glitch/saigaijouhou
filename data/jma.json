@@ -1,34 +1,44 @@
 {
-  "updated": "2026-09-24T15:37:17.946079+09:00",
+  "updated": "2026-09-24T15:53:18+09:00",
   "prefectures": {
     "北海道": {
-      "level": 0,
-      "label": "取得不能",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "気象",
+      "detail": "雷注意報・霜注意報・強風注意報・大雨注意報・レベル２大雨注意報・濃霧注意報",
       "hazards": {
         "気象": {
-          "level": null,
-          "items": [],
-          "error": "HTTP Error 404: Not Found"
+          "level": 1,
+          "items": [
+            "雷注意報",
+            "霜注意報",
+            "強風注意報",
+            "大雨注意報",
+            "レベル２大雨注意報",
+            "濃霧注意報"
+          ],
+          "area_count": 248,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
           "detail": "自動取得未接続"
         }
-      },
-      "data_error": true
+      }
     },
     "青森県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "気象",
+      "detail": "濃霧注意報",
       "hazards": {
         "気象": {
-          "level": 0,
-          "items": [],
-          "municipality_count": 0
+          "level": 1,
+          "items": [
+            "濃霧注意報"
+          ],
+          "area_count": 50,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -37,15 +47,18 @@
       }
     },
     "岩手県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "気象",
+      "detail": "濃霧注意報",
       "hazards": {
         "気象": {
-          "level": 0,
-          "items": [],
-          "municipality_count": 0
+          "level": 1,
+          "items": [
+            "濃霧注意報"
+          ],
+          "area_count": 47,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -62,7 +75,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -79,7 +93,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -96,7 +111,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -106,15 +122,19 @@
     },
     "福島県": {
       "level": 0,
-      "label": "取得不能",
-      "dominant": "取得不能",
-      "detail": "福島県の最新VPWS50集約通報を確認できません: ",
-      "data_error": true,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": null,
+          "level": 0,
           "items": [],
-          "error": "福島県の最新VPWS50集約通報を確認できません: "
+          "municipality_count": 0,
+          "source": "JMA R06 XML"
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
         }
       }
     },
@@ -127,7 +147,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -144,7 +165,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -161,7 +183,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -178,7 +201,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -187,15 +211,20 @@
       }
     },
     "千葉県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "気象",
+      "detail": "大雨注意報・レベル２土砂災害注意報・濃霧注意報",
       "hazards": {
         "気象": {
-          "level": 0,
-          "items": [],
-          "municipality_count": 0
+          "level": 1,
+          "items": [
+            "大雨注意報",
+            "レベル２土砂災害注意報",
+            "濃霧注意報"
+          ],
+          "area_count": 65,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -212,7 +241,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -229,7 +259,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -246,7 +277,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -263,7 +295,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -280,7 +313,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -297,7 +331,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -314,7 +349,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -331,7 +367,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -348,7 +385,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -365,7 +403,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -382,7 +421,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -399,7 +439,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -416,7 +457,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -433,7 +475,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -450,7 +493,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -467,7 +511,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -484,7 +529,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -501,7 +547,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -518,7 +565,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -535,7 +583,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -552,7 +601,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -569,7 +619,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -586,7 +637,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -603,7 +655,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -620,7 +673,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -637,7 +691,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -654,7 +709,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -671,7 +727,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -688,7 +745,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -705,7 +763,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -722,7 +781,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -739,7 +799,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -756,7 +817,8 @@
         "気象": {
           "level": 0,
           "items": [],
-          "municipality_count": 0
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
@@ -766,81 +828,83 @@
     },
     "鹿児島県": {
       "level": 0,
-      "label": "取得不能",
+      "label": "発表なし",
       "dominant": "平常",
       "detail": "",
       "hazards": {
         "気象": {
-          "level": null,
+          "level": 0,
           "items": [],
-          "error": "HTTP Error 404: Not Found"
+          "area_count": 0,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
           "detail": "自動取得未接続"
         }
-      },
-      "data_error": true
+      }
     },
     "沖縄県": {
-      "level": 0,
-      "label": "取得不能",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "気象",
+      "detail": "雷注意報",
       "hazards": {
         "気象": {
-          "level": null,
-          "items": [],
-          "error": "HTTP Error 404: Not Found"
+          "level": 1,
+          "items": [
+            "雷注意報"
+          ],
+          "area_count": 11,
+          "source": "JMA R06 XML"
         },
         "避難情報": {
           "level": null,
           "detail": "自動取得未接続"
         }
-      },
-      "data_error": true
+      }
     }
   },
   "regions": {
     "県北": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "県中": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "県南": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "会津": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "南会津": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "相双": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "いわき": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     }
@@ -1145,320 +1209,343 @@
   "fukushima_source_products": [
     {
       "title": "台風の暴風域に入る確率",
-      "updated": "2026-09-23T07:03:04Z"
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
-      "updated": "2026-09-23T00:41:43Z"
+      "updated": "2026-09-24T06:48:05Z"
     }
   ],
   "sources": [
-    "JMA R06 current warning XML (Fukushima)",
+    "JMA R06 current warning XML (nationwide)",
     "JMA disaster XML feeds"
   ],
-  "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe.",
-  "fukushima_municipalities": {
-    "07322": {
-      "name": "",
-      "items": [],
-      "level": 0
+  "r06_source_products": [
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T06:45:06Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07522": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-24T06:44:59Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07505": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T06:29:26Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07484": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（暴風）",
+      "updated": "2026-09-24T06:29:19Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07342": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T05:20:14Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07421": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T02:35:14Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07201": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-24T02:35:07Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07407": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T02:32:35Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07444": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（大雨）",
+      "updated": "2026-09-24T02:32:21Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07445": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T01:57:56Z",
+      "prefectures": [
+        "沖縄県"
+      ]
     },
-    "07203": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T01:57:55Z",
+      "prefectures": [
+        "沖縄県"
+      ]
     },
-    "07368": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T01:57:43Z",
+      "prefectures": [
+        "千葉県"
+      ]
     },
-    "07561": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T01:57:33Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07564": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T01:57:32Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07301": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T01:57:31Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07482": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T01:57:29Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07548": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T01:57:28Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07464": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T01:57:27Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07211": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T01:41:08Z",
+      "prefectures": [
+        "千葉県"
+      ]
     },
-    "07308": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（土砂）",
+      "updated": "2026-09-24T01:41:01Z",
+      "prefectures": [
+        "千葉県"
+      ]
     },
-    "07446": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T01:04:11Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07544": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-24T01:04:07Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07212": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T01:01:32Z",
+      "prefectures": [
+        "千葉県"
+      ]
     },
-    "07362": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T00:51:53Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07209": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-24T00:51:46Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07423": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T00:50:07Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07481": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-24T00:50:00Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07364": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T00:48:11Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07202": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-24T00:47:57Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07501": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-24T00:35:49Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07466": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-24T00:35:42Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07502": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-23T22:49:02Z",
+      "prefectures": [
+        "千葉県"
+      ]
     },
-    "07447": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（土砂）",
+      "updated": "2026-09-23T22:48:49Z",
+      "prefectures": [
+        "千葉県"
+      ]
     },
-    "07546": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-23T22:18:46Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07465": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（暴風）",
+      "updated": "2026-09-23T22:18:38Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07461": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-23T21:21:33Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07504": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-23T21:21:31Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07208": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-23T21:20:17Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07543": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（暴風）",
+      "updated": "2026-09-23T21:20:10Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07545": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-23T21:20:10Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07405": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-23T21:15:30Z",
+      "prefectures": [
+        "岩手県"
+      ]
     },
-    "07503": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-23T21:15:29Z",
+      "prefectures": [
+        "北海道"
+      ]
     },
-    "07204": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-23T21:15:13Z",
+      "prefectures": [
+        "青森県"
+      ]
     },
-    "07205": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-23T21:03:42Z",
+      "prefectures": [
+        "岩手県"
+      ]
     },
-    "07207": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-23T21:03:40Z",
+      "prefectures": [
+        "青森県"
+      ]
     },
-    "07422": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-23T21:03:34Z",
+      "prefectures": [
+        "岩手県"
+      ]
     },
-    "07541": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07542": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07344": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07483": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07547": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07521": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07408": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07303": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07213": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07402": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07210": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07214": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07367": {
-      "name": "",
-      "items": [],
-      "level": 0
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-23T21:03:32Z",
+      "prefectures": [
+        "青森県"
+      ]
     }
-  },
-  "warning_source": "JMA warning page / R06 VPWW55-61",
-  "warning_updated": "2026-09-23T21:53:01+09:00",
-  "fukushima_source": {
-    "status": "error",
-    "error": "福島県の最新VPWS50集約通報を確認できません: "
-  },
-  "fukushima_updated": "2026-09-24T15:37:17.946079+09:00"
+  ],
+  "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe."
 }
