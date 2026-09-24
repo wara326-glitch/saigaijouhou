@@ -33,6 +33,11 @@ def is_active_status(s):
  s=str(s or '')
  return not any(x in s for x in ['解除','発表警報・注意報はなし','なし'])
 
+def muni5(code):
+ c=str(code or '')
+ # JMA warning JSON uses 7-digit secondary-area codes; first 5 digits identify municipality.
+ return c[:5] if len(c)>=5 and c[:2].isdigit() else c
+
 def active_kinds(area):
  out=[]
  for w in area.get('warnings',[]):
@@ -43,7 +48,7 @@ def active_kinds(area):
 def choose_municipal_areas(data,code):
  candidates=[]
  for at in data.get('areaTypes',[]):
-  areas=at.get('areas',[]);score=sum(1 for a in areas if str(a.get('code','')).startswith(code) and len(str(a.get('code','')))==5)
+  areas=at.get('areas',[]);score=sum(1 for a in areas if str(a.get('code','')).startswith(code) and len(str(a.get('code','')))>=5)
   if score:candidates.append((score,areas))
  return max(candidates,key=lambda x:x[0])[1] if candidates else []
 def parse_warning(code):
@@ -53,9 +58,13 @@ def parse_warning(code):
  except Exception as e:return {'level':None,'items':[],'error':str(e)},{}
  areas=choose_municipal_areas(data,code);municipal={}
  for a in areas:
-  c=str(a.get('code',''))
+  raw=str(a.get('code',''))
+  c=muni5(raw)
   if not(c.startswith(code) and len(c)==5):continue
-  kinds=active_kinds(a);municipal[c]={'name':a.get('name',''),'items':kinds,'level':max([sev_name(x) for x in kinds] or [0])}
+  kinds=active_kinds(a)
+  old=municipal.get(c,{'name':'','items':[],'level':0})
+  merged=list(dict.fromkeys(old.get('items',[])+kinds))
+  municipal[c]={'name':a.get('name','') or old.get('name',''),'items':merged,'level':max([sev_name(x) for x in merged] or [0])}
  items=list(dict.fromkeys(x for d in municipal.values() for x in d['items']));lv=max([d['level'] for d in municipal.values()] or [0])
  return {'level':lv,'items':items,'municipality_count':sum(1 for d in municipal.values() if d['level']>0)},municipal
 
@@ -217,14 +226,25 @@ def main():
    prefs[p]['data_error']=True
   elif w.get('level',0)>0:
    prefs[p]['level']=w['level'];prefs[p]['dominant']='気象';prefs[p]['detail']='・'.join(w.get('items',[])[:8])
- # Fukushima is sourced only from the current 2026 R06 XML products.
- fmun,ferr,fused=parse_fukushima_r06()
+ # Fukushima now follows the SAME path as other prefectures.
+ # Start from the public prefecture warning JSON and normalize 7-digit area codes.
+ fw,flegacy=parse_warning('07')
+ fmun=flegacy
+ fused=[]
  fp=prefs['福島県']
- if ferr:
-  fp['data_error']=True;fp['hazards']['気象']={'level':None,'items':[],'error':ferr};fp['detail']=ferr
- else:
-  allitems=list(dict.fromkeys(x for d in fmun.values() for x in d['items']));flv=max([d['level'] for d in fmun.values()] or [0])
-  fp['hazards']['気象']={'level':flv,'items':allitems,'municipality_count':sum(1 for d in fmun.values() if d['level']>0),'source':'JMA R06 XML'}
+ if fw.get('level') is not None:
+  fp.pop('data_error',None)
+  fp['hazards']['気象']=fw
+  fp['level']=fw.get('level',0);fp['dominant']='気象' if fp['level'] else '平常';fp['detail']='・'.join(fw.get('items',[])[:12])
+ # Overlay newer R06 XML municipality detail when available; failure no longer makes Fukushima alone unavailable.
+ rx,rerr,fused=parse_fukushima_r06()
+ if rx and any(d.get('items') for d in rx.values()):
+  for c,d in rx.items():
+   if c in fmun and d.get('items'):
+    merged=list(dict.fromkeys(fmun[c].get('items',[])+d.get('items',[])))
+    fmun[c]['items']=merged;fmun[c]['level']=max([sev_name(x) for x in merged] or [0])
+  allitems=list(dict.fromkeys(x for d in fmun.values() for x in d.get('items',[])));flv=max([d.get('level',0) for d in fmun.values()] or [0])
+  fp['hazards']['気象']={'level':flv,'items':allitems,'municipality_count':sum(1 for d in fmun.values() if d.get('level',0)>0),'source':'JMA warning JSON + R06 XML'}
   fp['level']=flv;fp['dominant']='気象' if flv else '平常';fp['detail']='・'.join(allitems[:12])
  parse_xml_hazards(prefs)
  for p in prefs:
