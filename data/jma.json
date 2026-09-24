@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T18:02:54.987131+09:00",
+  "updated": "2026-09-24T18:11:41+09:00",
   "prefectures": {
     "北海道": {
       "level": 1,
@@ -118,15 +118,18 @@
     },
     "福島県": {
       "level": 0,
-      "label": "取得不能",
-      "dominant": "取得不能",
-      "detail": "福島県の最新VPWS50集約通報を確認できません: ",
-      "data_error": true,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": null,
+          "level": 0,
           "items": [],
-          "error": "福島県の最新VPWS50集約通報を確認できません: "
+          "municipality_count": 0
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
         }
       }
     },
@@ -861,44 +864,44 @@
   },
   "regions": {
     "県北": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "県中": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "県南": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "会津": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "南会津": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "相双": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "いわき": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     }
@@ -909,7 +912,52 @@
       "items": [],
       "level": 0
     },
+    "07202": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07203": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07204": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07205": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07207": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07208": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07209": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
     "07210": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07211": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07212": {
       "name": "",
       "items": [],
       "level": 0
@@ -944,21 +992,6 @@
       "items": [],
       "level": 0
     },
-    "07203": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07207": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07211": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
     "07342": {
       "name": "",
       "items": [],
@@ -969,92 +1002,22 @@
       "items": [],
       "level": 0
     },
-    "07501": {
+    "07362": {
       "name": "",
       "items": [],
       "level": 0
     },
-    "07502": {
+    "07364": {
       "name": "",
       "items": [],
       "level": 0
     },
-    "07503": {
+    "07367": {
       "name": "",
       "items": [],
       "level": 0
     },
-    "07504": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07505": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07521": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07522": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07205": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07461": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07464": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07465": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07466": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07481": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07482": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07483": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07484": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07202": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07208": {
+    "07368": {
       "name": "",
       "items": [],
       "level": 0
@@ -1114,32 +1077,77 @@
       "items": [],
       "level": 0
     },
-    "07362": {
+    "07461": {
       "name": "",
       "items": [],
       "level": 0
     },
-    "07364": {
+    "07464": {
       "name": "",
       "items": [],
       "level": 0
     },
-    "07367": {
+    "07465": {
       "name": "",
       "items": [],
       "level": 0
     },
-    "07368": {
+    "07466": {
       "name": "",
       "items": [],
       "level": 0
     },
-    "07209": {
+    "07481": {
       "name": "",
       "items": [],
       "level": 0
     },
-    "07212": {
+    "07482": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07483": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07484": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07501": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07502": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07503": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07504": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07505": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07521": {
+      "name": "",
+      "items": [],
+      "level": 0
+    },
+    "07522": {
       "name": "",
       "items": [],
       "level": 0
@@ -1190,11 +1198,6 @@
       "level": 0
     },
     "07564": {
-      "name": "",
-      "items": [],
-      "level": 0
-    },
-    "07204": {
       "name": "",
       "items": [],
       "level": 0
@@ -1562,10 +1565,5 @@
       ]
     }
   ],
-  "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe.",
-  "fukushima_source": {
-    "status": "error",
-    "error": "福島県の最新VPWS50集約通報を確認できません: "
-  },
-  "fukushima_updated": "2026-09-24T18:02:54.987131+09:00"
+  "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe."
 }
