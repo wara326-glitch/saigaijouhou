@@ -47,6 +47,8 @@ def choose_municipal_areas(data,code):
   if score:candidates.append((score,areas))
  return max(candidates,key=lambda x:x[0])[1] if candidates else []
 def parse_warning(code):
+ # JMA legacy JSON disappeared for some prefectures after the 2026 R06 transition.
+ # Treat 404 as "legacy unavailable" and let the R06 XML feed become authoritative.
  try:data=get_json(f'https://www.jma.go.jp/bosai/warning/data/warning/{code}0000.json')
  except Exception as e:return {'level':None,'items':[],'error':str(e)},{}
  areas=choose_municipal_areas(data,code);municipal={}
@@ -93,6 +95,46 @@ def xml_area_records(root):
    if kn:kinds.append((kn,st))
   if kinds:rec.append((code,name,kinds))
  return rec
+
+def parse_r06_all():
+ """Build current warning/advisory state for all prefectures from JMA R06 XML.
+ New 2026 products can contain split secondary areas; prefecture is determined
+ from municipality/area codes when possible and text is used as a fallback."""
+ try: entries=feed_entries(FEEDS['extra'])
+ except Exception as e: return {},str(e),[]
+ keys=('気象警報・注意報','大雨','土砂災害','高潮','暴風','暴風雪','大雪','波浪','雷','濃霧','乾燥','なだれ','着雪','着氷','融雪','低温','霜')
+ candidates=[e for e in entries if any(k in e.get('title','') for k in keys) and fresh(e,48)]
+ state={p:{'items':[],'level':0,'areas':set()} for p in PREFS}
+ used=[];seen=set()
+ for ent in candidates:
+  try:
+   root=ET.fromstring(get(ent['link'])); txt=text_all(root)
+  except: continue
+  prod=ent.get('title','')
+  # Do not collapse every prefecture's bulletin solely by title.
+  sig=(prod,ent.get('updated',''),ent.get('link',''))
+  if sig in seen: continue
+  seen.add(sig)
+  rec=xml_area_records(root)
+  touched=set()
+  for code,name,kinds in rec:
+   code=str(code)
+   p=None
+   if len(code)>=2:
+    pc=code[:2]
+    p=next((pn for pn,prefcode in PREFS.items() if prefcode==pc),None)
+   if not p:
+    p=next((pn for pn in PREFS if pn in txt),None)
+   if not p: continue
+   active=[kn for kn,st in kinds if is_active_status(st) and any(x in kn for x in ('警報','注意報','危険情報'))]
+   if active:
+    state[p]['items'].extend(active); state[p]['areas'].add(name or code); touched.add(p)
+  if touched: used.append({'title':prod,'updated':ent.get('updated',''),'prefectures':sorted(touched)})
+ for p,d in state.items():
+  d['items']=list(dict.fromkeys(d['items']))
+  d['areas']=sorted(d['areas'])
+  d['level']=max([sev_name(x) for x in d['items']] or [0])
+ return state,None,used
 
 def parse_fukushima_r06():
  """Build Fukushima municipality status from the latest current R06 warning XML products.
@@ -162,12 +204,19 @@ def parse_xml_hazards(prefs):
 
 def main():
  prefs={p:{'level':0,'label':'発表なし','dominant':'平常','detail':'','hazards':{}} for p in PREFS};fmun={}
- # National legacy endpoint remains temporarily for non-Fukushima prefectures only.
+ # Prefer the current 2026 R06 XML feed nationally; legacy JSON is only a fallback.
+ r06,r06err,r06used=parse_r06_all()
  for p,c in PREFS.items():
-  if p=='福島県':continue
-  w,_=parse_warning(c);prefs[p]['hazards']['気象']=w
-  if w['level'] is None:prefs[p]['data_error']=True
-  elif w['level']>0:prefs[p]['level']=w['level'];prefs[p]['dominant']='気象';prefs[p]['detail']='・'.join(w['items'][:8])
+  rd=r06.get(p,{}) if not r06err else {}
+  if rd:
+   w={'level':rd.get('level',0),'items':rd.get('items',[]),'area_count':len(rd.get('areas',[])),'source':'JMA R06 XML'}
+  else:
+   w,_=parse_warning(c)
+  prefs[p]['hazards']['気象']=w
+  if w.get('level') is None:
+   prefs[p]['data_error']=True
+  elif w.get('level',0)>0:
+   prefs[p]['level']=w['level'];prefs[p]['dominant']='気象';prefs[p]['detail']='・'.join(w.get('items',[])[:8])
  # Fukushima is sourced only from the current 2026 R06 XML products.
  fmun,ferr,fused=parse_fukushima_r06()
  fp=prefs['福島県']
@@ -190,5 +239,5 @@ def main():
     if d.get('level',0)>0:affected.append(d.get('name') or c)
   regions[rn]={'level':lv,'label':label(lv),'items':list(dict.fromkeys(hits)),'affected':list(dict.fromkeys(affected))}
  now=datetime.now(JST).isoformat(timespec='seconds');Path('data').mkdir(exist_ok=True)
- Path('data/jma.json').write_text(json.dumps({'updated':now,'prefectures':prefs,'regions':regions,'municipalities':fmun,'fukushima_source_products':fused,'sources':['JMA R06 current warning XML (Fukushima)','JMA disaster XML feeds'],'note':'Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe.'},ensure_ascii=False,indent=2),encoding='utf-8')
+ Path('data/jma.json').write_text(json.dumps({'updated':now,'prefectures':prefs,'regions':regions,'municipalities':fmun,'fukushima_source_products':fused,'sources':['JMA R06 current warning XML (nationwide)','JMA disaster XML feeds'],'r06_source_products':r06used,'note':'Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe.'},ensure_ascii=False,indent=2),encoding='utf-8')
 if __name__=='__main__':main()
