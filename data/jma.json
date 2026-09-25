@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T15:40:35+09:00",
+  "updated": "2026-09-25T15:57:09+09:00",
   "prefectures": {
     "北海道": {
       "level": 1,
@@ -849,7 +849,7 @@
           "items": [
             "雷注意報"
           ],
-          "area_count": 3,
+          "area_count": 51,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -1203,7 +1203,7 @@
   "fukushima_source_products": [
     {
       "title": "台風の暴風域に入る確率",
-      "updated": "2026-09-25T00:43:05Z"
+      "updated": "2026-09-25T06:43:05Z"
     },
     {
       "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
@@ -1215,6 +1215,34 @@
     "JMA disaster XML feeds"
   ],
   "r06_source_products": [
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-25T06:52:54Z",
+      "prefectures": [
+        "沖縄県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-25T06:52:42Z",
+      "prefectures": [
+        "沖縄県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-09-25T06:43:01Z",
+      "prefectures": [
+        "沖縄県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-09-25T06:42:56Z",
+      "prefectures": [
+        "沖縄県"
+      ]
+    },
     {
       "title": "気象警報・注意報（Ｈ２７）",
       "updated": "2026-09-25T06:05:32Z",
