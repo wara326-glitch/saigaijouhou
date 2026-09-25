@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26T00:04:16+09:00",
+  "updated": "2026-09-26T00:21:50.642000+09:00",
   "prefectures": {
     "北海道": {
       "level": 0,
@@ -111,18 +111,15 @@
     },
     "福島県": {
       "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "label": "取得不能",
+      "dominant": "取得不能",
+      "detail": "福島県の最新VPWS50集約通報を確認できません: ",
+      "data_error": true,
       "hazards": {
         "気象": {
-          "level": 0,
-          "items": [],
-          "municipality_count": 0
-        },
-        "避難情報": {
           "level": null,
-          "detail": "自動取得未接続"
+          "items": [],
+          "error": "福島県の最新VPWS50集約通報を確認できません: "
         }
       }
     },
@@ -869,44 +866,44 @@
   },
   "regions": {
     "県北": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     },
     "県中": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     },
     "県南": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     },
     "会津": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     },
     "南会津": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     },
     "相双": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     },
     "いわき": {
-      "level": 0,
-      "label": "発表なし",
+      "level": null,
+      "label": "取得不能",
       "items": [],
       "affected": []
     }
@@ -1507,5 +1504,10 @@
       ]
     }
   ],
-  "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe."
+  "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe.",
+  "fukushima_source": {
+    "status": "error",
+    "error": "福島県の最新VPWS50集約通報を確認できません: "
+  },
+  "fukushima_updated": "2026-09-26T00:21:50.642000+09:00"
 }
