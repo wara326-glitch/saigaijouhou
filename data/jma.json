@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T21:31:18.083462+09:00",
+  "updated": "2026-10-01T21:43:34+09:00",
   "prefectures": {
     "北海道": {
       "level": 1,
@@ -63,16 +63,21 @@
       }
     },
     "宮城県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "地震",
+      "detail": "震度3",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "area_count": 0,
           "source": "JMA R06 XML"
+        },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:32:01Z"
         },
         "避難情報": {
           "level": null,
@@ -81,15 +86,18 @@
       }
     },
     "秋田県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "気象",
+      "detail": "波浪注意報・濃霧注意報",
       "hazards": {
         "気象": {
-          "level": 0,
-          "items": [],
-          "area_count": 0,
+          "level": 1,
+          "items": [
+            "波浪注意報",
+            "濃霧注意報"
+          ],
+          "area_count": 34,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -117,16 +125,24 @@
       }
     },
     "福島県": {
-      "level": 0,
-      "label": "取得不能",
-      "dominant": "取得不能",
-      "detail": "福島県の最新VPWS50集約通報を確認できません: ",
-      "data_error": true,
+      "level": 1,
+      "label": "注意",
+      "dominant": "地震",
+      "detail": "震度3",
       "hazards": {
         "気象": {
-          "level": null,
+          "level": 0,
           "items": [],
-          "error": "福島県の最新VPWS50集約通報を確認できません: "
+          "municipality_count": 0
+        },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:32:01Z"
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
         }
       }
     },
@@ -145,6 +161,11 @@
           "area_count": 52,
           "source": "JMA R06 XML"
         },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:28:49Z"
+        },
         "避難情報": {
           "level": null,
           "detail": "自動取得未接続"
@@ -152,16 +173,21 @@
       }
     },
     "栃木県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "地震",
+      "detail": "震度3",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "area_count": 0,
           "source": "JMA R06 XML"
+        },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:32:01Z"
         },
         "避難情報": {
           "level": null,
@@ -170,16 +196,21 @@
       }
     },
     "群馬県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "地震",
+      "detail": "震度3",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "area_count": 0,
           "source": "JMA R06 XML"
+        },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:32:01Z"
         },
         "避難情報": {
           "level": null,
@@ -188,16 +219,21 @@
       }
     },
     "埼玉県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "地震",
+      "detail": "震度3",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "area_count": 0,
           "source": "JMA R06 XML"
+        },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:32:01Z"
         },
         "避難情報": {
           "level": null,
@@ -220,6 +256,11 @@
           "area_count": 65,
           "source": "JMA R06 XML"
         },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:28:49Z"
+        },
         "避難情報": {
           "level": null,
           "detail": "自動取得未接続"
@@ -229,16 +270,19 @@
     "東京都": {
       "level": 1,
       "label": "注意",
-      "dominant": "気象",
-      "detail": "波浪注意報",
+      "dominant": "地震",
+      "detail": "震度3",
       "hazards": {
         "気象": {
-          "level": 1,
-          "items": [
-            "波浪注意報"
-          ],
-          "area_count": 18,
+          "level": 0,
+          "items": [],
+          "area_count": 0,
           "source": "JMA R06 XML"
+        },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:32:01Z"
         },
         "避難情報": {
           "level": null,
@@ -247,16 +291,21 @@
       }
     },
     "神奈川県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "地震",
+      "detail": "震度3",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "area_count": 0,
           "source": "JMA R06 XML"
+        },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:32:01Z"
         },
         "避難情報": {
           "level": null,
@@ -265,16 +314,21 @@
       }
     },
     "新潟県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "地震",
+      "detail": "震度3",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "area_count": 0,
           "source": "JMA R06 XML"
+        },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:32:01Z"
         },
         "避難情報": {
           "level": null,
@@ -337,16 +391,21 @@
       }
     },
     "山梨県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "地震",
+      "detail": "震度3",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "area_count": 0,
           "source": "JMA R06 XML"
+        },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:32:01Z"
         },
         "避難情報": {
           "level": null,
@@ -367,6 +426,11 @@
           ],
           "area_count": 33,
           "source": "JMA R06 XML"
+        },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:32:01Z"
         },
         "避難情報": {
           "level": null,
@@ -393,16 +457,21 @@
       }
     },
     "静岡県": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "地震",
+      "detail": "震度3",
       "hazards": {
         "気象": {
           "level": 0,
           "items": [],
           "area_count": 0,
           "source": "JMA R06 XML"
+        },
+        "地震": {
+          "level": 1,
+          "detail": "震度3",
+          "published": "2026-10-01T12:32:01Z"
         },
         "避難情報": {
           "level": null,
@@ -879,44 +948,44 @@
   },
   "regions": {
     "県北": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "県中": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "県南": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "会津": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "南会津": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "相双": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "いわき": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     }
@@ -1231,6 +1300,27 @@
   "r06_source_products": [
     {
       "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-10-01T12:32:36Z",
+      "prefectures": [
+        "秋田県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｒ０６）（波浪）",
+      "updated": "2026-10-01T12:32:25Z",
+      "prefectures": [
+        "秋田県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-10-01T12:32:25Z",
+      "prefectures": [
+        "秋田県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
       "updated": "2026-10-01T12:15:57Z",
       "prefectures": [
         "長崎県"
@@ -1447,14 +1537,14 @@
       ]
     },
     {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
+      "title": "気象警報・注意報（Ｒ０６）（波浪）",
       "updated": "2026-10-01T07:14:04Z",
       "prefectures": [
         "北海道"
       ]
     },
     {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
+      "title": "気象警報・注意報（Ｒ０６）（暴風）",
       "updated": "2026-10-01T07:14:04Z",
       "prefectures": [
         "北海道"
@@ -1559,14 +1649,14 @@
       ]
     },
     {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
+      "title": "気象警報・注意報（Ｒ０６）（暴風）",
       "updated": "2026-10-01T06:48:24Z",
       "prefectures": [
         "北海道"
       ]
     },
     {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
+      "title": "気象警報・注意報（Ｒ０６）（波浪）",
       "updated": "2026-10-01T06:48:24Z",
       "prefectures": [
         "北海道"
@@ -1690,26 +1780,7 @@
       "prefectures": [
         "沖縄県"
       ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-01T02:33:42Z",
-      "prefectures": [
-        "東京都"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-01T02:33:31Z",
-      "prefectures": [
-        "東京都"
-      ]
     }
   ],
-  "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe.",
-  "fukushima_source": {
-    "status": "error",
-    "error": "福島県の最新VPWS50集約通報を確認できません: "
-  },
-  "fukushima_updated": "2026-10-01T21:31:18.083462+09:00"
+  "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe."
 }
