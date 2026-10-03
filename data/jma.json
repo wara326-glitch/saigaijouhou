@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T10:59:27+09:00",
+  "updated": "2026-10-03T11:20:36+09:00",
   "prefectures": {
     "北海道": {
       "level": 1,
@@ -1242,6 +1242,20 @@
     "JMA disaster XML feeds"
   ],
   "r06_source_products": [
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-10-03T01:58:07Z",
+      "prefectures": [
+        "沖縄県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-10-03T01:58:07Z",
+      "prefectures": [
+        "沖縄県"
+      ]
+    },
     {
       "title": "気象警報・注意報（Ｈ２７）",
       "updated": "2026-10-03T01:58:05Z",
