@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-07T16:02:06.528636+09:00",
+  "updated": "2026-10-07T16:10:49+09:00",
   "prefectures": {
     "北海道": {
       "level": 1,
       "label": "注意",
       "dominant": "気象",
-      "detail": "波浪注意報・霜注意報・強風注意報",
+      "detail": "強風注意報・霜注意報・波浪注意報",
       "hazards": {
         "気象": {
           "level": 1,
           "items": [
-            "波浪注意報",
+            "強風注意報",
             "霜注意報",
-            "強風注意報"
+            "波浪注意報"
           ],
           "area_count": 237,
           "source": "JMA R06 XML"
@@ -129,15 +129,18 @@
     },
     "福島県": {
       "level": 0,
-      "label": "取得不能",
-      "dominant": "取得不能",
-      "detail": "福島県の最新VPWS50集約通報を確認できません: ",
-      "data_error": true,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": null,
+          "level": 0,
           "items": [],
-          "error": "福島県の最新VPWS50集約通報を確認できません: "
+          "municipality_count": 0
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
         }
       }
     },
@@ -434,14 +437,14 @@
       "level": 1,
       "label": "注意",
       "dominant": "気象",
-      "detail": "強風注意報・波浪注意報・乾燥注意報",
+      "detail": "乾燥注意報・強風注意報・波浪注意報",
       "hazards": {
         "気象": {
           "level": 1,
           "items": [
+            "乾燥注意報",
             "強風注意報",
-            "波浪注意報",
-            "乾燥注意報"
+            "波浪注意報"
           ],
           "area_count": 66,
           "source": "JMA R06 XML"
@@ -920,44 +923,44 @@
   },
   "regions": {
     "県北": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "県中": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "県南": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "会津": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "南会津": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "相双": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "いわき": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     }
@@ -1262,7 +1265,7 @@
   "fukushima_source_products": [
     {
       "title": "台風の暴風域に入る確率",
-      "updated": "2026-10-07T06:43:04Z"
+      "updated": "2026-10-07T07:03:04Z"
     },
     {
       "title": "気象警報・注意報（Ｒ０６）（波浪）",
@@ -1274,6 +1277,41 @@
     "JMA disaster XML feeds"
   ],
   "r06_source_products": [
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-10-07T07:07:49Z",
+      "prefectures": [
+        "愛知県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-10-07T07:04:51Z",
+      "prefectures": [
+        "静岡県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｒ０６）（波浪）",
+      "updated": "2026-10-07T07:04:45Z",
+      "prefectures": [
+        "静岡県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-10-07T07:03:34Z",
+      "prefectures": [
+        "北海道"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｒ０６）（暴風）",
+      "updated": "2026-10-07T07:03:27Z",
+      "prefectures": [
+        "北海道"
+      ]
+    },
     {
       "title": "気象警報・注意報（Ｈ２７）",
       "updated": "2026-10-07T06:51:49Z",
@@ -2022,26 +2060,7 @@
       "prefectures": [
         "熊本県"
       ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-06T21:06:36Z",
-      "prefectures": [
-        "長崎県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-06T21:06:32Z",
-      "prefectures": [
-        "長崎県"
-      ]
     }
   ],
-  "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe.",
-  "fukushima_source": {
-    "status": "error",
-    "error": "福島県の最新VPWS50集約通報を確認できません: "
-  },
-  "fukushima_updated": "2026-10-07T16:02:06.528636+09:00"
+  "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe."
 }
