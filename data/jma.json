@@ -1,21 +1,21 @@
 {
-  "updated": "2026-10-15T02:43:04.147003+09:00",
+  "updated": "2026-10-15T04:19:02+09:00",
   "prefectures": {
     "北海道": {
       "level": 2,
       "label": "警戒",
       "dominant": "気象",
-      "detail": "雷注意報・強風注意報・波浪注意報・暴風警報",
+      "detail": "強風注意報・波浪注意報・雷注意報・暴風警報",
       "hazards": {
         "気象": {
           "level": 2,
           "items": [
-            "雷注意報",
             "強風注意報",
             "波浪注意報",
+            "雷注意報",
             "暴風警報"
           ],
-          "area_count": 221,
+          "area_count": 232,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -67,14 +67,15 @@
       "level": 1,
       "label": "注意",
       "dominant": "気象",
-      "detail": "強風注意報",
+      "detail": "乾燥注意報・強風注意報",
       "hazards": {
         "気象": {
           "level": 1,
           "items": [
+            "乾燥注意報",
             "強風注意報"
           ],
-          "area_count": 36,
+          "area_count": 52,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -87,15 +88,16 @@
       "level": 1,
       "label": "注意",
       "dominant": "気象",
-      "detail": "強風注意報・波浪注意報",
+      "detail": "雷注意報・強風注意報・波浪注意報",
       "hazards": {
         "気象": {
           "level": 1,
           "items": [
+            "雷注意報",
             "強風注意報",
             "波浪注意報"
           ],
-          "area_count": 18,
+          "area_count": 34,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -126,15 +128,18 @@
     },
     "福島県": {
       "level": 0,
-      "label": "取得不能",
-      "dominant": "取得不能",
-      "detail": "福島県の最新VPWS50集約通報を確認できません: ",
-      "data_error": true,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": null,
+          "level": 0,
           "items": [],
-          "error": "福島県の最新VPWS50集約通報を確認できません: "
+          "municipality_count": 0
+        },
+        "避難情報": {
+          "level": null,
+          "detail": "自動取得未接続"
         }
       }
     },
@@ -142,15 +147,14 @@
       "level": 1,
       "label": "注意",
       "dominant": "気象",
-      "detail": "波浪注意報・雷注意報",
+      "detail": "波浪注意報",
       "hazards": {
         "気象": {
           "level": 1,
           "items": [
-            "波浪注意報",
-            "雷注意報"
+            "波浪注意報"
           ],
-          "area_count": 52,
+          "area_count": 9,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -219,16 +223,15 @@
       "level": 1,
       "label": "注意",
       "dominant": "気象",
-      "detail": "強風注意報・波浪注意報・雷注意報",
+      "detail": "波浪注意報・強風注意報",
       "hazards": {
         "気象": {
           "level": 1,
           "items": [
-            "強風注意報",
             "波浪注意報",
-            "雷注意報"
+            "強風注意報"
           ],
-          "area_count": 65,
+          "area_count": 31,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -241,15 +244,14 @@
       "level": 1,
       "label": "注意",
       "dominant": "気象",
-      "detail": "波浪注意報・雷注意報",
+      "detail": "波浪注意報",
       "hazards": {
         "気象": {
           "level": 1,
           "items": [
-            "波浪注意報",
-            "雷注意報"
+            "波浪注意報"
           ],
-          "area_count": 74,
+          "area_count": 11,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -282,17 +284,15 @@
       "level": 1,
       "label": "注意",
       "dominant": "気象",
-      "detail": "波浪注意報・濃霧注意報・強風注意報・雷注意報",
+      "detail": "波浪注意報・濃霧注意報",
       "hazards": {
         "気象": {
           "level": 1,
           "items": [
             "波浪注意報",
-            "濃霧注意報",
-            "強風注意報",
-            "雷注意報"
+            "濃霧注意報"
           ],
-          "area_count": 44,
+          "area_count": 23,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -362,17 +362,15 @@
       }
     },
     "山梨県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "気象",
-      "detail": "濃霧注意報",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": 1,
-          "items": [
-            "濃霧注意報"
-          ],
-          "area_count": 12,
+          "level": 0,
+          "items": [],
+          "area_count": 0,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -382,19 +380,15 @@
       }
     },
     "長野県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "気象",
-      "detail": "濃霧注意報・霜注意報・雷注意報",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": 1,
-          "items": [
-            "濃霧注意報",
-            "霜注意報",
-            "雷注意報"
-          ],
-          "area_count": 96,
+          "level": 0,
+          "items": [],
+          "area_count": 0,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -422,17 +416,15 @@
       }
     },
     "静岡県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "気象",
-      "detail": "強風注意報",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": 1,
-          "items": [
-            "強風注意報"
-          ],
-          "area_count": 15,
+          "level": 0,
+          "items": [],
+          "area_count": 0,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -442,17 +434,15 @@
       }
     },
     "愛知県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "気象",
-      "detail": "強風注意報",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": 1,
-          "items": [
-            "強風注意報"
-          ],
-          "area_count": 24,
+          "level": 0,
+          "items": [],
+          "area_count": 0,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -465,15 +455,14 @@
       "level": 1,
       "label": "注意",
       "dominant": "気象",
-      "detail": "濃霧注意報・強風注意報",
+      "detail": "濃霧注意報",
       "hazards": {
         "気象": {
           "level": 1,
           "items": [
-            "濃霧注意報",
-            "強風注意報"
+            "濃霧注意報"
           ],
-          "area_count": 21,
+          "area_count": 7,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -523,15 +512,17 @@
       }
     },
     "大阪府": {
-      "level": 0,
-      "label": "発表なし",
-      "dominant": "平常",
-      "detail": "",
+      "level": 1,
+      "label": "注意",
+      "dominant": "気象",
+      "detail": "乾燥注意報",
       "hazards": {
         "気象": {
-          "level": 0,
-          "items": [],
-          "area_count": 0,
+          "level": 1,
+          "items": [
+            "乾燥注意報"
+          ],
+          "area_count": 48,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -579,17 +570,15 @@
       }
     },
     "和歌山県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "気象",
-      "detail": "強風注意報",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": 1,
-          "items": [
-            "強風注意報"
-          ],
-          "area_count": 21,
+          "level": 0,
+          "items": [],
+          "area_count": 0,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -732,18 +721,15 @@
       }
     },
     "愛媛県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "気象",
-      "detail": "強風注意報・波浪注意報",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": 1,
-          "items": [
-            "強風注意報",
-            "波浪注意報"
-          ],
-          "area_count": 9,
+          "level": 0,
+          "items": [],
+          "area_count": 0,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -753,17 +739,15 @@
       }
     },
     "高知県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "気象",
-      "detail": "強風注意報",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": 1,
-          "items": [
-            "強風注意報"
-          ],
-          "area_count": 11,
+          "level": 0,
+          "items": [],
+          "area_count": 0,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -791,17 +775,15 @@
       }
     },
     "佐賀県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "気象",
-      "detail": "乾燥注意報",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": 1,
-          "items": [
-            "乾燥注意報"
-          ],
-          "area_count": 29,
+          "level": 0,
+          "items": [],
+          "area_count": 0,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -811,18 +793,15 @@
       }
     },
     "長崎県": {
-      "level": 1,
-      "label": "注意",
-      "dominant": "気象",
-      "detail": "強風注意報・波浪注意報",
+      "level": 0,
+      "label": "発表なし",
+      "dominant": "平常",
+      "detail": "",
       "hazards": {
         "気象": {
-          "level": 1,
-          "items": [
-            "強風注意報",
-            "波浪注意報"
-          ],
-          "area_count": 32,
+          "level": 0,
+          "items": [],
+          "area_count": 0,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -835,16 +814,17 @@
       "level": 1,
       "label": "注意",
       "dominant": "気象",
-      "detail": "濃霧注意報・霜注意報・強風注意報",
+      "detail": "濃霧注意報・乾燥注意報・霜注意報・強風注意報",
       "hazards": {
         "気象": {
           "level": 1,
           "items": [
             "濃霧注意報",
+            "乾燥注意報",
             "霜注意報",
             "強風注意報"
           ],
-          "area_count": 54,
+          "area_count": 57,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -864,7 +844,7 @@
           "items": [
             "強風注意報"
           ],
-          "area_count": 10,
+          "area_count": 5,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -895,15 +875,14 @@
       "level": 1,
       "label": "注意",
       "dominant": "気象",
-      "detail": "波浪注意報・強風注意報",
+      "detail": "波浪注意報",
       "hazards": {
         "気象": {
           "level": 1,
           "items": [
-            "波浪注意報",
-            "強風注意報"
+            "波浪注意報"
           ],
-          "area_count": 42,
+          "area_count": 16,
           "source": "JMA R06 XML"
         },
         "避難情報": {
@@ -935,44 +914,44 @@
   },
   "regions": {
     "県北": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "県中": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "県南": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "会津": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "南会津": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "相双": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     },
     "いわき": {
-      "level": null,
-      "label": "取得不能",
+      "level": 0,
+      "label": "発表なし",
       "items": [],
       "affected": []
     }
@@ -1277,7 +1256,7 @@
   "fukushima_source_products": [
     {
       "title": "台風の暴風域に入る確率",
-      "updated": "2026-10-14T13:03:04Z"
+      "updated": "2026-10-14T19:03:04Z"
     }
   ],
   "sources": [
@@ -1285,6 +1264,90 @@
     "JMA disaster XML feeds"
   ],
   "r06_source_products": [
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-10-14T19:05:12Z",
+      "prefectures": [
+        "熊本県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-10-14T19:05:05Z",
+      "prefectures": [
+        "熊本県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-10-14T19:04:26Z",
+      "prefectures": [
+        "大阪府"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-10-14T19:04:20Z",
+      "prefectures": [
+        "大阪府"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-10-14T18:55:09Z",
+      "prefectures": [
+        "宮城県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-10-14T18:55:06Z",
+      "prefectures": [
+        "宮城県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-10-14T18:42:47Z",
+      "prefectures": [
+        "秋田県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
+      "updated": "2026-10-14T18:42:32Z",
+      "prefectures": [
+        "秋田県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-10-14T18:35:44Z",
+      "prefectures": [
+        "北海道"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｒ０６）（暴風）",
+      "updated": "2026-10-14T18:35:41Z",
+      "prefectures": [
+        "北海道"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｈ２７）",
+      "updated": "2026-10-14T18:19:26Z",
+      "prefectures": [
+        "千葉県"
+      ]
+    },
+    {
+      "title": "気象警報・注意報（Ｒ０６）（波浪）",
+      "updated": "2026-10-14T18:19:26Z",
+      "prefectures": [
+        "千葉県"
+      ]
+    },
     {
       "title": "気象警報・注意報（Ｈ２７）",
       "updated": "2026-10-14T14:43:13Z",
@@ -1648,859 +1711,7 @@
       "prefectures": [
         "茨城県"
       ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:17Z",
-      "prefectures": [
-        "沖縄県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:17Z",
-      "prefectures": [
-        "沖縄県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:16Z",
-      "prefectures": [
-        "沖縄県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:15Z",
-      "prefectures": [
-        "鹿児島県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:14Z",
-      "prefectures": [
-        "高知県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:13Z",
-      "prefectures": [
-        "愛媛県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:11Z",
-      "prefectures": [
-        "鹿児島県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:10Z",
-      "prefectures": [
-        "熊本県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:08Z",
-      "prefectures": [
-        "長崎県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:07Z",
-      "prefectures": [
-        "大分県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:05Z",
-      "prefectures": [
-        "和歌山県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:03Z",
-      "prefectures": [
-        "兵庫県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:01Z",
-      "prefectures": [
-        "山口県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:00Z",
-      "prefectures": [
-        "滋賀県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:58:00Z",
-      "prefectures": [
-        "京都府"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:59Z",
-      "prefectures": [
-        "鳥取県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:58Z",
-      "prefectures": [
-        "島根県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:57Z",
-      "prefectures": [
-        "神奈川県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:55Z",
-      "prefectures": [
-        "東京都"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:54Z",
-      "prefectures": [
-        "静岡県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:53Z",
-      "prefectures": [
-        "三重県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:51Z",
-      "prefectures": [
-        "千葉県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:50Z",
-      "prefectures": [
-        "山梨県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:48Z",
-      "prefectures": [
-        "愛知県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:46Z",
-      "prefectures": [
-        "茨城県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:45Z",
-      "prefectures": [
-        "埼玉県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:44Z",
-      "prefectures": [
-        "福井県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:41Z",
-      "prefectures": [
-        "富山県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:41Z",
-      "prefectures": [
-        "長野県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:39Z",
-      "prefectures": [
-        "石川県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:38Z",
-      "prefectures": [
-        "新潟県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:36Z",
-      "prefectures": [
-        "宮城県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:35Z",
-      "prefectures": [
-        "山形県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:33Z",
-      "prefectures": [
-        "秋田県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:32Z",
-      "prefectures": [
-        "青森県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:30Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:29Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:28Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:27Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:26Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:24Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:23Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:57:22Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:29:03Z",
-      "prefectures": [
-        "神奈川県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T07:28:53Z",
-      "prefectures": [
-        "神奈川県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:23:04Z",
-      "prefectures": [
-        "大分県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T07:22:59Z",
-      "prefectures": [
-        "大分県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:21:06Z",
-      "prefectures": [
-        "千葉県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T07:20:28Z",
-      "prefectures": [
-        "千葉県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T07:20:28Z",
-      "prefectures": [
-        "千葉県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:19:44Z",
-      "prefectures": [
-        "山梨県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
-      "updated": "2026-10-14T07:19:36Z",
-      "prefectures": [
-        "山梨県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:18:31Z",
-      "prefectures": [
-        "茨城県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T07:18:21Z",
-      "prefectures": [
-        "茨城県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:17:18Z",
-      "prefectures": [
-        "富山県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:16:47Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T07:16:37Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T07:16:37Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:13:53Z",
-      "prefectures": [
-        "長野県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
-      "updated": "2026-10-14T07:13:38Z",
-      "prefectures": [
-        "長野県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:12:11Z",
-      "prefectures": [
-        "新潟県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T07:12:08Z",
-      "prefectures": [
-        "新潟県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T07:12:08Z",
-      "prefectures": [
-        "新潟県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
-      "updated": "2026-10-14T07:12:08Z",
-      "prefectures": [
-        "新潟県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:11:57Z",
-      "prefectures": [
-        "山口県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T07:11:49Z",
-      "prefectures": [
-        "山口県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:08:39Z",
-      "prefectures": [
-        "静岡県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:08:25Z",
-      "prefectures": [
-        "沖縄県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T07:08:23Z",
-      "prefectures": [
-        "静岡県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:08:21Z",
-      "prefectures": [
-        "東京都"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T07:08:15Z",
-      "prefectures": [
-        "沖縄県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
-      "updated": "2026-10-14T07:08:11Z",
-      "prefectures": [
-        "東京都"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T07:08:11Z",
-      "prefectures": [
-        "東京都"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T07:01:33Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T07:01:06Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:59:47Z",
-      "prefectures": [
-        "青森県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T06:59:46Z",
-      "prefectures": [
-        "青森県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T06:59:46Z",
-      "prefectures": [
-        "青森県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:55:44Z",
-      "prefectures": [
-        "沖縄県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T06:55:31Z",
-      "prefectures": [
-        "沖縄県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:54:46Z",
-      "prefectures": [
-        "沖縄県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T06:54:33Z",
-      "prefectures": [
-        "沖縄県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:52:19Z",
-      "prefectures": [
-        "島根県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:51:35Z",
-      "prefectures": [
-        "鳥取県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:46:24Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T06:46:13Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:42:21Z",
-      "prefectures": [
-        "佐賀県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:39:48Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
-      "updated": "2026-10-14T06:39:46Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T06:39:46Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T06:39:46Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:30:26Z",
-      "prefectures": [
-        "長崎県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T06:30:18Z",
-      "prefectures": [
-        "長崎県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T06:30:18Z",
-      "prefectures": [
-        "長崎県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:25:18Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T06:25:07Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:21:55Z",
-      "prefectures": [
-        "埼玉県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
-      "updated": "2026-10-14T06:21:47Z",
-      "prefectures": [
-        "埼玉県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:17:43Z",
-      "prefectures": [
-        "福井県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T06:17:34Z",
-      "prefectures": [
-        "福井県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:17:27Z",
-      "prefectures": [
-        "新潟県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:07:43Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T06:07:29Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:05:46Z",
-      "prefectures": [
-        "宮城県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T06:05:36Z",
-      "prefectures": [
-        "宮城県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T06:05:16Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T06:05:13Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T06:05:13Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T05:55:47Z",
-      "prefectures": [
-        "京都府"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T05:55:42Z",
-      "prefectures": [
-        "京都府"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T05:55:16Z",
-      "prefectures": [
-        "石川県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T05:52:19Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T05:52:07Z",
-      "prefectures": [
-        "北海道"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T05:47:49Z",
-      "prefectures": [
-        "千葉県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T05:47:40Z",
-      "prefectures": [
-        "千葉県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（暴風）",
-      "updated": "2026-10-14T05:47:40Z",
-      "prefectures": [
-        "千葉県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T05:43:28Z",
-      "prefectures": [
-        "東京都"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T05:42:56Z",
-      "prefectures": [
-        "東京都"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（波浪）",
-      "updated": "2026-10-14T05:42:54Z",
-      "prefectures": [
-        "東京都"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｈ２７）",
-      "updated": "2026-10-14T05:30:02Z",
-      "prefectures": [
-        "長野県"
-      ]
-    },
-    {
-      "title": "気象警報・注意報（Ｒ０６）（その他注意報）",
-      "updated": "2026-10-14T05:29:49Z",
-      "prefectures": [
-        "長野県"
-      ]
     }
   ],
-  "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe.",
-  "fukushima_source": {
-    "status": "error",
-    "error": "福島県の最新VPWS50集約通報を確認できません: "
-  },
-  "fukushima_updated": "2026-10-15T02:43:04.147003+09:00"
+  "note": "Fukushima 59 municipalities and 7 regions are derived from current JMA 2026 R06 XML warning products; acquisition failure is never shown as safe."
 }
